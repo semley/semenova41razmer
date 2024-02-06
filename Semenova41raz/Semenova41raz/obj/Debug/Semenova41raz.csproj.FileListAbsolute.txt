@@ -40,3 +40,10 @@ C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\De
 C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\Debug\Semenova41raz.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\Debug\Semenova41raz.exe
 C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\Debug\Semenova41raz.pdb
+C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\Debug\Semenova41raz_Content.g.cs
+C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\Debug\Semenova41raz.csproj.CopyComplete

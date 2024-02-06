@@ -23,6 +23,8 @@ namespace Semenova41raz
         public ProductPage()
         {
             InitializeComponent();
+            var currentProduct = Семенова41размерEntities.GetContext().Product.ToList();
+            ProductListView.ItemsSource = currentProduct;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
