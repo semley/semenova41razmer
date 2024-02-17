@@ -188,6 +188,8 @@
     <Resource Include="Res\J384T6.jpg" />
     <Resource Include="Res\А112Т4.jpg" />
     <Resource Include="J384T6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="SemenovaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SemenovaModel.edmx</DependentUpon>

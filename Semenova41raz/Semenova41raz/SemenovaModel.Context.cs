@@ -16,12 +16,14 @@ namespace Semenova41raz
     public partial class Семенова41размерEntities : DbContext
     {
         private static Семенова41размерEntities _context;
+
         public static Семенова41размерEntities GetContext()
         {
-            if (_context == null)
-                _context = new Семенова41размерEntities();
+            if(_context == null )
+                _context=new Семенова41размерEntities();
             return _context;
         }
+
         public Семенова41размерEntities()
             : base("name=Семенова41размерEntities")
         {

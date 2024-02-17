@@ -8,11 +8,12 @@
     <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="OrderDeliveryDate" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="OrderPickupPoint" Type="Int32" Nullable="false" />
-    <Property Name="OrderClient" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClientID" Type="Int32" />
     <Property Name="OrderReceiveCode" Type="Int32" />
     <Property Name="OrderStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="OrderProduct" Relationship="Self.FK__OrderProd__Order__2D27B809" FromRole="Order" ToRole="OrderProduct" />
     <NavigationProperty Name="PickUpPoint" Relationship="Self.FK_Order_PickUpPoint" FromRole="Order" ToRole="PickUpPoint" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Order_User" FromRole="Order" ToRole="User" />
   </EntityType>
   <EntityType Name="OrderProduct">
     <Key>
@@ -71,6 +72,7 @@
     <Property Name="UserLogin" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="UserPassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="UserRole" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Order_User" FromRole="User" ToRole="Order" />
     <NavigationProperty Name="Role" Relationship="Self.FK__User__UserRole__267ABA7A" FromRole="User" ToRole="Role" />
   </EntityType>
   <Association Name="FK__OrderProd__Order__2D27B809">
@@ -94,6 +96,18 @@
       </Principal>
       <Dependent Role="Order">
         <PropertyRef Name="OrderPickupPoint" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="ClientID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -134,6 +148,10 @@
     </AssociationSet>
     <AssociationSet Name="FK_Order_PickUpPoint" Association="Self.FK_Order_PickUpPoint">
       <End Role="PickUpPoint" EntitySet="PickUpPoint" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+      <End Role="User" EntitySet="User" />
       <End Role="Order" EntitySet="Order" />
     </AssociationSet>
     <AssociationSet Name="FK__OrderProd__Produ__2E1BDC42" Association="Self.FK__OrderProd__Produ__2E1BDC42">
