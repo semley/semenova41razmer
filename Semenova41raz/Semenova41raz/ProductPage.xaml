@@ -12,10 +12,23 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="65"></RowDefinition>
+            <RowDefinition Height="65"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
+        <WrapPanel Orientation="Vertical" Grid.Row="0">
+            <WrapPanel Orientation="Horizontal">
+                <TextBlock Text="Вы вошли как " ></TextBlock>
+                <TextBlock Name="FIOTB" ></TextBlock>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal">
+                <TextBlock Text="Роль: "  Name="Role"></TextBlock>
+                <TextBlock Name="RoleTB" ></TextBlock>
+            </WrapPanel>
 
-        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+        </WrapPanel>
+
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1">
             <TextBlock Name="CountTB" TextAlignment="Left" Width="155" FontSize="20" Grid.Row="0"></TextBlock>
             <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" >
                 

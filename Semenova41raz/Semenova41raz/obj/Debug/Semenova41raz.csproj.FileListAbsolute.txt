@@ -47,3 +47,5 @@ C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\bin\De
 C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\Debug\Semenova41raz_Content.g.cs
 C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\Debug\Semenova41raz.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\Debug\AuthPage.g.cs
+C:\Users\Lenovo\source\repos\semenova41razmer\Semenova41raz\Semenova41raz\obj\Debug\AuthPage.baml

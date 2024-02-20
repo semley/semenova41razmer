@@ -21,9 +21,28 @@ namespace Semenova41raz
     public partial class ProductPage : Page
     {
         public int vsecurrentProductCount = Семенова41размерEntities.GetContext().Product.Count();
-        public ProductPage()
+        public ProductPage(User user)
         {
             InitializeComponent();
+            if (user != null)
+            {
+                FIOTB.Text = user.UserSurname + " " + user.UserName + " " + user.UserPatronymic;
+                switch (user.UserRole)
+                {
+                    case 1:
+                        RoleTB.Text = "Администратор"; break;
+                    case 2:
+                        RoleTB.Text = "Клиент"; break;
+                    case 3:
+                        RoleTB.Text = "Менеджер"; break;
+                }
+            }
+            else
+            {
+                FIOTB.Text = "Гость";
+                RoleTB.Visibility = Visibility.Hidden;
+                Role.Visibility = Visibility.Hidden;
+            }
             var currentProduct = Семенова41размерEntities.GetContext().Product.ToList();
             ProductListView.ItemsSource = currentProduct;
             UpdateProduct();
